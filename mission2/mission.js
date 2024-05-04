@@ -1,19 +1,17 @@
-const themeSelector = document.getElementById('theme-toggle');
+const themeSelector = document.getElementById('theme-select');
 const body = document.body;
+const logo = document.getElementById('logo');
+
 function changeTheme() {
-//check to see what the current value of our select is. The current value is conveniently found in themeSelector.value!
-if (body.classList.contains('dark-theme')) {
-    body.classList.remove('dark-theme');
-} else {
-    body.classList.add('dark-theme');
-}
+    const theme = themeSelector.value;
+
+    if (theme === 'Dark') {
+        body.classList.add('dark-mode');
+        logo.src = 'images/byui_dark.png'; // Update to the path of your dark mode logo
+    } else {
+        body.classList.remove('dark-mode');
+        logo.src = 'images/byui.webp'; // Update to the path of your light mode logo
+    }
 }
 
-// if the value is dark then:
-// add the dark class to the body
-// change the source of the logo to point to the white logo.
-// otherwise
-// remove the dark class
-// make sure the logo src is the blue logo.
-// add eventlistener to the themeSelector element here. Use the changeTheme function as the event handler function.
-themeSelector.addEventListener('click', changeTheme);
+themeSelector.addEventListener('change', changeTheme);
