@@ -8,7 +8,6 @@ body {
     border: 1px solid #888888c9;
     padding: 50px;
     font-family: 'Times New Roman';
-    color: rgb(0, 0, 0);
     line-height: 20px;
 }
 
@@ -61,7 +60,9 @@ p1 {
 }
 
 .dark-mode {
-    background-color: rgb(71, 71, 71);
+    background-color: #333;
+}
+.dark-mode .margin {
     color: white;
 }
 
