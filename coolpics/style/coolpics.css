@@ -1,0 +1,6 @@
+body {
+    background-color: aliceblue;
+}
+.gallery {
+    grid-template-columns: 50, 50, 50;
+}
