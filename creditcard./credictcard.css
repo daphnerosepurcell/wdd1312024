@@ -1,0 +1,27 @@
+body {
+    background:white;
+    margin: auto;
+    align-items: center;
+    display: block;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+form li + li {
+    margin-top: 1em;
+.hero-body {
+    margin: 0;
+    display: block;
+    max-width: 100%;
+    max-height: 100;
+    background: #b8b8b8;
+    border: 5px, solid, black;
+    box-shadow: #00000037;   
+}
+#card-image {
+    position: relative;
+    margin: auto;
+    padding: 20px 0;
+}
