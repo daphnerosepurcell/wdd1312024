@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+:root {
+    --text-dark: #333;
+    --primary-font: "Amatic SC", Arial, Helvetica, sans-serif;
+    --secondary-font: Arial, sans-serif;
+}
+
+.amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.amatic-sc-bold {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+
+body {
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#search-form {
+    margin: 1em auto;
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    font-family: var(--primary-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1em;
+}
+
+header img {
+    height: 80px;
+    margin-right: 1em;
+}
+
+header h1 {
+    font-family: var(--primary-font);
+    font-size: 3em;
+    color: black;
+}
+
+main {
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-family: var(--secondary-font);
+}
+
+#recipe-list {
+    font-family: var(--primary-font);
+}
+
+form input {
+    flex: 1;
+    padding: 0.5em;
+    font-size: 1em;
+    font-family: var(--secondary-font);
+}
+
+form button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    color: var(--text-light);
+    border: none;
+    cursor: pointer;
+    font-family: var(--secondary-font);
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+.social img {
+    width: 24px;
+    margin: 0 0.5em;
+}
+
+footer p {
+    font-size: 0.6em;
+    font-family: var(--secondary-font);
+}
+
+@media (min-width: 700px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+    }
+
+    #search-form {
+        flex-basis: 30%;
+    }
+
+    #recipe-list {
+        flex-basis: 65%;
+    }
+}
+
+@media (min-width: 960px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
