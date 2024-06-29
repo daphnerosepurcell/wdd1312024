@@ -1,41 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 :root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
     --text-dark: #333;
+    --text-light: #ebebeb;
     --primary-font: "Amatic SC", Arial, Helvetica, sans-serif;
     --secondary-font: Arial, sans-serif;
 }
 
-.amatic-sc-regular {
-    font-family: "Amatic SC", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.amatic-sc-bold {
-    font-family: "Amatic SC", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-p {
-    font-family: var(--secondary-font);
-}
-
 body {
+    font-family: var(--secondary-font);
     color: var(--text-dark);
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-#search-form {
-    margin: 1em auto;
-    width: 50%;
-}
-
-img {
-    max-width: 100%;
 }
 
 header {
@@ -53,46 +32,39 @@ header img {
 }
 
 header h1 {
-    font-family: var(--primary-font);
     font-size: 3em;
     color: black;
 }
 
-main {
-    padding: 1em;
-}
-
-form {
+#search-form {
+    margin: 1em auto;
+    width: 50%;
     display: flex;
     justify-content: center;
-    margin-bottom: 1em;
-    font-family: var(--secondary-font);
 }
 
-#recipe-list {
-    font-family: var(--primary-font);
-}
-
-form input {
+#search-input {
     flex: 1;
     padding: 0.5em;
     font-size: 1em;
-    font-family: var(--secondary-font);
 }
 
 form button {
     padding: 0.5em 1em;
     font-size: 1em;
-    color: var(--text-light);
+    color: var(--text-dark);
     border: none;
     cursor: pointer;
-    font-family: var(--secondary-font);
+
 }
 
 footer {
     padding: 1em;
     text-align: center;
-    font-family: var(--secondary-font);
+}
+
+footer p {
+    font-size: 0.6em;
 }
 
 .social img {
@@ -100,9 +72,61 @@ footer {
     margin: 0 0.5em;
 }
 
-footer p {
-    font-size: 0.6em;
+.recipe {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.recipe img {
+    object-fit: cover;
+    flex: 0 0 100px; 
+    height: 400px;
+    width: 600px;
+    margin-right: 1em;
+    border-radius: 5px;
+}
+
+.recipe-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe h2 {
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+}
+.recipe__tags {
+    margin-left: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipe__tags li {
+    margin: 0.2em;
+    padding: 0.5em;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: var(--text-light);
+    color: var(--text-dark);
     font-family: var(--secondary-font);
+}
+.recipe .rating {
+    display: block;
+    margin: 0.5em 0;
+}
+
+.recipe p {
+    font-size: 1em;
+    color: var(--text-dark);
 }
 
 @media (min-width: 700px) {
