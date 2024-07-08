@@ -30,5 +30,10 @@ nav a:hover {
 }
 a {
     color: black;
-
+}
+.personalweb {
+    border: solid 1px #333;
+    text-decoration: none;
+    font-size: 2em;
+    max-width: fit-content;
 }
