@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography Portfolio">
+    <meta name="author" content="Daphne Purcell">
+    <meta property="og:title" content="Photography Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="An online portfolio showcasing photography.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://daphnerosepurcell.github.io/wdd1312024/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="icon" href="./images/logo-png.png" type="image/x-icon">
+    <script src="./js/contact.js" type="module" defer></script>
+</head>
+<body>
+    <header class="header-container">
+        <nav class="nav">
+            <ul>
+                <li><a href="https://daphnerosepurcell.github.io/wdd1312024/personalwebsite/index.html">Home</a></li>
+                <li><a href="https://daphnerosepurcell.github.io/wdd1312024/personalwebsite/gallery.html">Gallery</a></li>
+                <li><a href="https://daphnerosepurcell.github.io/wdd1312024/personalwebsite/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="form-feedback"></section>
+        <div id="hero2">
+            <div id="hero-box">
+            <img id="hero-img2" src="images/ny.jpg" alt="ny">
+        </div>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Daphne Purcell Photography</p>
+    </footer>
+    <script src="main.js" type="module"></script>
+</body>
+</html>

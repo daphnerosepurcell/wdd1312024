@@ -10,13 +10,11 @@
 }
 body {
   font-family: var(--paragraph-font);
-  margin: 0;
   padding: 0;
-  max-width: 1200px;
   margin: 0 auto;
   background-color: #2c292e;
-  
 }
+
 
 @media only screen and (min-width: 0rem) {
     #hero {
@@ -57,7 +55,7 @@ body {
     }
     #hero .cs-container {
       width: 100%;
-      max-width: 80rem;
+      max-width: 1200px;
       padding: 280px 0;
       margin: auto;
       position: relative;
@@ -66,7 +64,6 @@ body {
       content: '';
       width: 1px;
       height: 100%;
-      background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
       opacity: 1;
       position: absolute;
       display: block;
@@ -207,7 +204,6 @@ body {
       content: '';
       width: 1px;
       height: 100%;
-      background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
       opacity: 1;
       position: absolute;
       display: block;
@@ -232,11 +228,11 @@ body {
       display: none;
     }
   }
-  footer {
-    background-color: #0b0a0c;
+footer {
+  background-color: #0b0a0c;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-}                                                                               
+}
